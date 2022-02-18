@@ -1,0 +1,12 @@
+def isPrime(n):
+    if (n<2):
+        return False
+    for i in range(2,n//2+1):
+        if (n%i==0):
+            return False
+    return True
+a=int(input('enter Lower range :'))
+b=int(input('enter Higher range:'))
+for x in range(a,b):
+    if isPrime(x):
+        print(x,end=' ')
